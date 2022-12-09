@@ -1,0 +1,68 @@
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body
+        {
+          
+
+
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(27deg, #5DADE2 50%, #48C9B0 50% );
+                }
+        form
+        {
+            text-align: center;
+            color: white;
+            font-size :20px;
+            font-family: monospace;
+        }
+        img
+        {
+            display: block;
+            margin: auto;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;
+    color: white; font-family:
+    monospace; font-size : 40px" >TRAPECIO</h1>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATsAAACgCAMAAABE1DvBAAAAvVBMVEX////g0bL39O+ldxWebAPRu5KWYQCXYgCUXQCYZADi1LaVXwCaZwCTXADg0bGZZQDu5trdzauicyKjcwj9/PedbA3j1sDm2r6xi0ethT3Zx6G5mF+mei328eiQVwC9nmnWwqbXw5vFqXGxi07OuJPLsoaidRzGq3Ls4tDTv52rg0e5lljFrHuyjULl2cWyjla4l2S1k03SuompfzCOUQDAomSofj3Jr32ofSqqgkHHroikeSOneQy+oHPNt5pvLwyjAAAFV0lEQVR4nO3diVraShTA8QZhJrNlI8FAwhIwqd6gVqyi9dL3f6wG79fbDWtYzwyc3xOE/zcJcmaEDx8QQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEELGChuwoF//Nq4EPQPTFmfQr38LnZSwJhymLkLoBJvqpKLIW3CmkbyAbrChviuKFof0cSCvoCts5DIiVToL0vmYCRPjef+IKIdNZ1nOUNIRdIm1VenkHDqdZfmJpBy6xZr6VTrwVbfklzToQNdYzwshUx3SVbfttXq5gc6xjlRITdJVbxjXom1OvMatRumqlReTs0voJjU1Pgl7oU86y+rF4smDrlJPQsUQOtevsq49MSJeLOyhD13rN71C3Pahw7zvTrnapbO4X6hY95XXWFCWaJeuipel6pPeKy/MXVvHdJVWqoZaT6TySMR6prOcPFBTjePNmej2dPrr5BczyXJt480GLNY3ncVnrj3VcwsjbDHWzfRNV8WbR0LPKfwoIPdap6ueeeOItqA7reAHpKnxDfuf5SzUhy71h3NJmpqvulcPNLKgW/3m5jMrTEhn8QciR9C1fnETsQB4X6eu81KvlXeZisiQdMspPAn02cLoPxNhTDrL6k1IocssNAyE0GJfp65e137UI174mUiDVp21nEh1lRbx+gGB38NeE++l9gQ+njdhcupAx1gXz7rqFnoW2p9QZV66SuteTIBnodeGprOsWaAS0LnAmZBjM9NZfBbYCdxEqnFnS/32deris0gsoOL1h9QtjU23HOcVdAGTrrGQ9p3B6SrzJpmCtJsycW3os+47ZyxFDpFuwGLD01W37VjSg8cLL/Te16mLj+mhj3OHFy7TeDdxDTwhwWHjjSLydBTpllsY4qCz0JEkTec40r3OQt3zg6XzBrTwjyXd63FueahBsjdgqRH7OnX5E/F4mBPJlxFJzZp1vsuPDzNIvkxJdFSrzlrOQmP7ef/xvIKqI1t1S1nXLvY9kfJc0zYn6uFZVzztdxbqtUWQQ7/OveBZau91kOzdV+mM/xC7Gs8CscdZqDehxo6J38dbBRnuK10/pup401Xx8qa421c6Jcfn0C9wn3heqHIf6cJSSc3+1Wnn+DxiezgL35gqafLmRD18TmVr1/HCL4yVR/T5/y18LKIdn0gOc2mbvjlRjzMUNNtpusWAXB/128QPzlh+7u2w3ZcB6x79s+47P3F3OEgeHce+Tl1+Yu/sUO3Ipcexr1OXX6p0N98L0pHi5QTeYX/Wi1Wxi9N5HUWiE3mb+B/3J2Swfbwq3XFtTtTCezHZ+qstOoQ8tqBfCQCede0tv2CgU5DgFNMtV16x3aHamxciTzPdcuUVIt5i1TWJPL1n3Xc8e7L/3XjVFSKYnWy65SD5SZWbTeG9Kt0c+vpB8bwgw02eeZcTERl6/H9neIvIDb6dwZsQ9gB97eD4nKx/LtS7tdnHU/s4sQLPm4Pxeun6iS0fMF3FmUaDq3Wm8OGt7SbQV60JZyrlGvHChXKTE3+b+MEZq2BUPx2hJfQVa8Qplaw5zqtWHSnxWfcTZ0hVvXhfFY1P+NPEKn4pRZ14F4pMTmZfpybeK1nxfryvmG4F7l+Ld7cwrlzR7UFfqY6ctnj5+yz0ipBnfNat5N+L9t/ijSRJ8YZdjWdVvLeHKldSPJ/urPM9PEvFm1sY3CWPGfQVaoy3ClGujnceiBPd16mLZ4wkq25bK1puxKK/yiK1Ip6VUvkR8LfEDPHQVH9M4RuMsigC/A07Q0QR++M4d0PabbhfTjRJe5D8fs8C/2CnUd74OwUhhBBCCCGE1vcNhUjCTkRUPUEAAAAASUVORK5CYII=" alt="">
+        <form  method="post">
+            
+            <div class="user">
+                <label> Ingrese la base menor del trapecio</label>
+                <input type="text" required>
+            </div>
+
+            <div class="user">
+                <label>Ingrese la base mayor del trapecio</label>
+                <input type="text" required>
+            </div>
+
+            <div class="user">
+                <label>Ingrese la altura del trapecio</label>
+                <input type="text" required>
+            </div>
+
+
+    <ul>
+        <li><a href="index.jsp">Regresar</a></li>
+    </ul>
+
+</body>
+</html>
